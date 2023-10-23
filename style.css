@@ -21,7 +21,7 @@
     margin-inline: 10px;
 }
 #top>.options{
-    background-color: #fff;
+    /* background-color: #fff; */
     display: flex;
     align-items: center;
     gap: 10px;
@@ -34,21 +34,19 @@
     font-size: 16px !important;
     cursor: pointer;
 }
-.options>button{
+.btn{
     background-color: transparent;
     border: none;
     padding: 5px;
     border-radius: 4px;
 }
-.options>button:hover
+.btn:hover,.active
 {
-   background-color: rgb(240, 232, 232);
+   background-color: rgb(124, 121, 121);
    cursor: pointer;
+   color: white;
 }
-#canvas
-{
-    cursor: crosshair;
-}
+
 #bottom{
     position: absolute;
     bottom: 20px;

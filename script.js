@@ -5,13 +5,14 @@ canvas.height=window.innerHeight;
 
 const c = canvas.getContext("2d");
 
-canvas.addEventListener("mousedown",onMouseDown);
-
+let draw_color = "black";
 let previousPosition = null;
 
 function onMouseDown(e)
 {
     previousPosition = [e.clientX, e.clientY];
+    c.strokeStyle= draw_color;
+    c.lineWidth = 2;
     console.log("mousedown");
     canvas.addEventListener("mousemove",onMouseMove);
     canvas.addEventListener("mouseup",onMouseUp);
